@@ -16,7 +16,7 @@ import torch
 import torch.nn as nn
 from torch import optim
 from torch.utils.data import DataLoader
-from nisqa.lib import NISQA_lib as NL
+import nisqa.lib as NL
         
 class nisqaModel(object):
     '''
