@@ -19,9 +19,9 @@ setup(
     packages=find_packages(),
     install_requires=_load_requirements(THIS_DIR),
     package_data={'': [
-        './nisqa/weights/nisqa.tar',
-        './nisqa/weights/nisqa_mos_only.tar',
-        './nisqa/weights/nisqa_tts.tar',
+        'weights/nisqa.tar',
+        'weights/nisqa_mos_only.tar',
+        'weights/nisqa_tts.tar',
     ]},
     include_package_data=True,
 )
