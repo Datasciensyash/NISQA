@@ -83,6 +83,8 @@ def compute_mos_nisqa(
     predictions = pd.concat(predictions)
     predictions.to_csv(output_dir / f"nisqa_predictions_{input_dir.name}.csv", index=False)
 
+    print('Result:', predictions["mos_pred"].mean(), '+/-', predictions["mos_pred"].std())
+
 
 def main():
     args = parse_args()
